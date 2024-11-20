@@ -1,0 +1,22 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(139, 158, 140);
+}
+
+#birdForm {
+    margin-bottom: 20px;
+}
+
+#results {
+    width: 80%;
+    max-width: 600px;
+}
+
+.principal {
+    background-color: aqua;
+    font-size: small;
+}
