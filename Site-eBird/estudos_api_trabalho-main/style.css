@@ -1,0 +1,133 @@
+/* Estilo global */
+/* Defini Fontes, margens, cor de fundo e texto padrão*/
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8cc491;
+    color: #333;
+}
+
+/* Cabeçalho */
+/* Estilizei com o fundo verde, texto centralizado e espaçamento */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Estilo principal */
+/* Centraliza o conteudo Principal*/
+.principal {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Adicionei bordas arredondadas e espaçamento ao input e botão*/
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover para a cor mudar*/
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Resultados */
+/* Organizei os resultados para que sejam organizados em linha e ajustaveis*/
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilizei cartões de observação com sombra, bordas arredondadas e animação ao passar a mouse */
+
+.observation {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.observation:hover {
+    transform: translateY(-5px);
+}
+
+.observation img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .observation {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    #results {
+        padding: 10px;
+    }
+}

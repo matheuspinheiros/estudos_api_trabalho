@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta o Layout para celular -->
+        <title>eBird Observações de Aves</title>
+        <link rel="stylesheet" href="style.css">  <!-- Conecta o css -->
+        <!-- Usando fontes do google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Observações de Aves eBird</h1>
+            <p>Explore aves de diferentes regiões do mundo!</p>
+        </header>
+
+        <!-- parte principal -->
+        <div class="principal">
+            <!-- Formulário para a Sigla da região -->
+            <form id="birdForm">
+                <label for="region">Digite a sigla da região (ex: 'CA' para Califórnia):</label>
+                <input type="text" id="region" name="region" placeholder="Ex: CA" required>
+                <button type="submit">Pesquisar</button>
+            </form>
+            <div id="results"></div> <!-- Resultados da busca -->
+        </div>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>© 2024 Observações de Aves. Todos os direitos reservados, Matheus Pinheiro.</p>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
